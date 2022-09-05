@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="612" height="240" src="https://i.imgur.com/GHFShCv.png">
+  <img width="612" height="240" src="https://static-cdn.jtvnw.net/jtv_user_pictures/84644480-52cb-4204-b674-8094fb4c9234-channel_offline_image-1920x1080.jpeg">
 </p>
 
 ## 👋 About me

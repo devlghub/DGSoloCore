@@ -1,0 +1,66 @@
+@font-face {
+    font-display: swap;
+    font-family: Kum;
+    src: url('../fonts/KumbhSans-Regular.ttf');
+}
+
+body {
+overflow: hidden;
+}
+
+#toggleView{
+    display: block;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main-menu{
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-radius: 2px;
+    width: 75%;
+    height: 75%;
+    overflow: auto;
+    background-color: rgb(19, 47, 122);
+}
+
+.menu-heading{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 5px 0 5px 0;
+    font-family: Kum;
+    border: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.menu-text{
+    font-family: Kum;
+    margin: 0 20px 0 20px;
+}
+.menu-text h3{
+    text-align: center;
+}
+.menu-text p{
+    padding: 10px;
+    text-align: justify;
+}

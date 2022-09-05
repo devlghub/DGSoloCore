@@ -1,0 +1,102 @@
+@font-face {
+  font-display: swap;
+  font-family: Kum;
+  src: url('../fonts/KumbhSans-Regular.ttf');
+}
+
+body {
+  overflow: hidden;
+}
+
+/* MONEY UI START */
+.AllMoneyData{
+  position:absolute;
+  right:0px;
+  margin-right: 20px;
+  font-family: Kum;
+  font-size: 1.5em;
+}
+
+.money-digits{
+  margin-top: 8px;
+  color: #2fbd13;
+  padding-left: 5px;
+
+}
+
+.single-money{
+  display: flex;
+  flex-wrap: row wrap;
+}
+/* LOCATION END */
+
+/* BAR START */
+.AllCircularData{
+/* background-color: #da0a37; */
+  position:absolute;
+  width:100%;
+  bottom:0px;
+}
+.flex-wrapper {
+  display: flex;
+  flex-wrap: row wrap;
+  max-width: 28%;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: start;
+  padding-right: 5px;
+}
+
+.circular-chart {
+  max-width: 100%;
+}
+
+.circle-bg {
+  fill:black;
+  stroke: rgba(0, 0, 0, 0.541);
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.red .circle {
+  stroke: #da0a37;
+}
+
+.circular-chart.green .circle {
+  stroke: #4CC790;
+}
+
+.circular-chart.blue .circle {
+  stroke: #3c47e5;
+}
+
+.circular-chart.gold .circle {
+  stroke: #e0d532;
+}
+
+.circular-chart.brown .circle {
+  stroke: #a04916;
+}
+
+.circular-chart.purple .circle {
+  stroke: #b121c4;
+}
+
+.circular-chart.dev .circle {
+  stroke: #38030a;
+}
+/* BAR END */

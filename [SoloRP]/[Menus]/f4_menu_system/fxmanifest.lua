@@ -3,7 +3,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 author 'DarthGaijin'
-description 'Prompt user with F5 Menu'
+description 'Prompt user with F4 Menu'
 version '1.0.0'
 
 -- What to run

@@ -12,4 +12,16 @@ server_scripts {
     "source/server.lua"
 }
 
+-- NUI Files
+ui_page 'ui/ui.html'
+
+files {
+    'ui/ui.html',
+    'ui/css/style.css',
+    'ui/fonts/KumbhSans-Regular.ttf',
+    'ui/js/*',
+    'ui/img/*'
+}
+
+
 dependency "oxmysql"

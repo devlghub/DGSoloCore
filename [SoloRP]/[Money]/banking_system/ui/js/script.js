@@ -11,7 +11,7 @@ window.addEventListener('message', (Event) => {
 });
 
 document.getElementById("button-close").addEventListener('click', ()=> {
-    console.log('Someone logged out of an ATM')
+    console.log('Button Clicked')
     document.getElementById("toggleView").style.display = "none";
     axios.post(`https://${GetParentResourceName()}/releaseFocus`, {});
 });

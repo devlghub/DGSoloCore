@@ -35,20 +35,19 @@ end
 
 -- Hide/Show ui
 function SetDisplay(bool)
-    local playerInfo = exports["Money_Script"]:getMoney()
     display = bool
     SetNuiFocus(bool, bool)
     SendNUIMessage({
-        type='atm-ui'
+        type='atm-ui',
         status = bool,
 		playerName = GetPlayerName(PlayerId()),
-		balance = "Account Balance: $" .. playerInfo.bank .. ".00",
+		balance = "Account Balance: $10,000",
         date = days[GetClockDayOfWeek() + 1],
         time = getTime()
     })
 end
 
-function drawText3D(coords, text)
+function DrawATM3DText(coords, text)
     local onScreen, _x, _y = World3dToScreen2d(coords.x, coords.y, coords.z + 1)
     local pX, pY, pZ = table.unpack(GetGameplayCamCoords())
     SetTextScale(0.4, 0.4)
@@ -85,11 +84,19 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         if not display and nearModel then
-            drawText3D(outPosition, "~w~Press ~r~E ~w~to use the ATM")
+            DrawATM3DText(outPosition, "~w~Press ~r~E ~w~to use the ATM")
             if IsControlJustPressed(0, 51) then
                 SetDisplay(true)
                 TriggerScreenblurFadeIn(1000)
             end
         end
     end
+end)
+
+
+
+RegisterNUICallback('releaseFocus', function(data, cb)
+    cb({})
+    SetNuiFocus(false,false)
+    TriggerScreenblurFadeOut(1000)
 end)

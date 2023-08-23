@@ -3,7 +3,7 @@
 </p>
 
 ## 👋 About me
-QBCore is a solo rp project. Taking pride in creating a framework that can be used and or reference for other frameworks, in hope to pass on something to the community and learn from it in the process!
+Solo rp project. Taking pride in creating a framework that can be used and or reference for other frameworks, in hope to pass on something to the community and learn from it in the process!
 
 ## 📖 Documentation
 Non at the moment.
